@@ -2,32 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSS Only Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Tic Tac Toe</h1>
-  <div class="board">
-    <input type="radio" name="cell1" id="cell1">
-    <label for="cell1"></label>
-    <input type="radio" name="cell2" id="cell2">
-    <label for="cell2"></label>
-    <input type="radio" name="cell3" id="cell3">
-    <label for="cell3"></label>
-
-    <input type="radio" name="cell4" id="cell4">
-    <label for="cell4"></label>
-    <input type="radio" name="cell5" id="cell5">
-    <label for="cell5"></label>
-    <input type="radio" name="cell6" id="cell6">
-    <label for="cell6"></label>
-
-    <input type="radio" name="cell7" id="cell7">
-    <label for="cell7"></label>
-    <input type="radio" name="cell8" id="cell8">
-    <label for="cell8"></label>
-    <input type="radio" name="cell9" id="cell9">
-    <label for="cell9"></label>
+  <div class="game-container">
+    <h1>Tic-Tac-Toe</h1>
+    <p id="turn">Player 1's Turn (X)</p>
+    <div class="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </div>
+    <button id="reset" onclick="resetGame()">Restart Game</button>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
