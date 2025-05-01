@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: #222;
+  color: #fff;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #444;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="radio"]:checked + label {
+  background: #0f0; /* Change color to indicate selection */
+  position: relative;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "X";
+  color: black;
+  font-size: 48px;
+  line-height: 100px;
+  display: block;
+}
